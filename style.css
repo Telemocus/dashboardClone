@@ -144,3 +144,11 @@ header-text .name{
 .sidebar li a:hover .text{
     color: var(--sidebar-color);
 }
+
+.sidebar .menu-bar{
+    background:red;
+    height: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
