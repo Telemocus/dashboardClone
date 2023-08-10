@@ -25,7 +25,7 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
     background: var(--body-color);
 }
 /* Sidebar Start */
@@ -33,7 +33,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 250px;
     background: var(--sidebar-color);
 }
@@ -146,9 +146,21 @@ header-text .name{
 }
 
 .sidebar .menu-bar{
-    background:red;
-    height: 100;
+    
+    height: calc(100% - 50px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.menu-bar .mode{
+    background: var(--primary-color-light);
+}
+.menu-bar .mode .moon-sun{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar .mode i{
+    position: absolute;
 }
